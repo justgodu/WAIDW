@@ -1,0 +1,26 @@
+ErrorDocument 404 /WAIDW/error.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^u/([0-9]+)$ ./profile.php?id=$1 [L,QSA]
+RewriteRule ^u ./profile.php [L,QSA]
+
+#RewriteCond %{SCRIPT_FILENAME} !-d
+#RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteRule ^c/([0-9a-zA-Z_-]+)$ ./company.php?slug=$1 [L,QSA]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^p/([0-9a-zA-Z_-]+)/([0-9]+)$ ./single-post.php?slug=$1&id=$2 [L,QSA]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^c/([0-9a-zA-Z_-]+)$ ./categories.php?cname=$1 [L,QSA]
+RewriteRule ^c/ ./categories.php [L,QSA]
+
+
+
+
+</IfModule>

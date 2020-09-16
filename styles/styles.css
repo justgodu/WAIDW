@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: white;
+  color: white;
+  margin-top: 63px;
+  height: 100vh;
+  max-width: 100%;
+  font-family: "Montserrat";
+}
+button,
+.button {
+  background-color: #9653fb;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  border-radius: 13px;
+  transition: ease 200ms;
+  box-shadow: #9653fb 0px 0px 2px 2px;
+}
+button:hover,
+.button:hover {
+  transition: ease 200ms;
+  box-shadow: #9653fb 0px 0px 5px 5px;
+  cursor: pointer;
+}
+a {
+  color: #9653fb;
+  text-decoration: none;
+  min-height: 20px;
+  transition: ease 100ms;
+}
+a:hover {
+  color: #4e05bb;
+  transition: ease 100ms;
+}
+ul {
+  display: flex;
+}
+li {
+  padding: 20px;
+  list-style: none;
+}
+
+.logo {
+  width: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+  float: left;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 80;
+  margin-top: 0;
+  background: #1d0041;
+
+  border-bottom: 5px #320a54 solid;
+}
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+}
+header nav {
+  position: relative;
+  margin: auto;
+}
+.form-login-logout {
+  padding-right: 15px;
+  padding-top: 15px;
+  position: fixed;
+  top: 0;
+  right: 20%;
+  z-index: 200;
+  max-width: 400px;
+}
+.login-container {
+  z-index: 99;
+  position: fixed;
+  top: 30%;
+  left: 43%;
+  background-color: #1d0041;
+  padding: 20px;
+  border: 3px #9653fb solid;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: #9653fb 0px 0px 20px 5px;
+  transition: ease 500ms;
+}
+.login-container:hover {
+  transition: ease 500ms;
+  box-shadow: #9653fb 0px 0px 30px 10px;
+}
+.login-container * {
+  padding: 10px;
+  margin: auto;
+}
+
+.sign-up-section {
+  background-color: #c1c1c1;
+  border: 2px #777777 solid;
+  margin: auto;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.sign-up-section h2 {
+  color: #6e6e6e;
+  font-size: 40px;
+}
+.form-sign-up {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-sign-up input {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 10px;
+}
+.form-sign-up button {
+  width: 60px;
+  margin: auto;
+  height: 40px;
+  border-radius: 10px;
+}
+.profile-container {
+  width: 100%;
+}
+
+.profile-container section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  max-width: 1313px;
+}
+.profile-container * {
+  margin: auto;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+}
+
+.banner-container {
+  max-width: 1200px;
+  background-color: #0f0020;
+  border-radius: 20px;
+
+  text-align: center;
+}
+.banner-img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+.profile-header {
+  background-color: #1d0041;
+  border: 5px #9653fb solid;
+  border-radius: 20px;
+}
+.profile-forms {
+  max-width: 400px;
+  background-color: #1d0041;
+  border-radius: 20px;
+}
+
+.form-profile-change,
+.form-banner-change,
+.add-post-form,
+.add-comment-form {
+  text-align: center;
+  margin: auto;
+
+  background-color: #150030;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.add-post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-post-form input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #1d0041;
+  color: white;
+  padding: 20px;
+}
+
+.add-post-form textarea {
+  width: 800px;
+  height: 150px;
+  background-color: #1d0041;
+  color: white;
+  border-color: #9653fb;
+  padding: 20px;
+  border-radius: 10px;
+}
+.add-comment-container {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 50%;
+}
+.add-comment-form textarea {
+  width: 420px;
+  height: 150px;
+  background-color: #1d0041;
+  color: white;
+  border-color: #9653fb;
+  padding: 20px;
+  border-radius: 10px;
+}
+.profile-name {
+  font-size: 30px;
+}
+.users-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.users-container img {
+  width: 30px;
+}
+
+.companies-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.companies-container img {
+  width: 30px;
+}
+.single-post {
+  margin: auto;
+  background-color: #1d0041;
+  width: 500px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+.post-title-container {
+  color: #ffffff;
+}
+.post-title {
+  max-width: 100%;
+  text-align: left;
+  position: relative;
+}
+.post-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+}
+
+.post-body {
+  padding: 10px;
+  margin: 10px;
+}
+.post-body * {
+  max-width: 100%;
+}
+.post-author-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.every-post-conteiner {
+  /*background-image: linear-gradient(#ea5f40, #25003e);*/
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  font-size: 19px;
+  margin: auto;
+}
+.error {
+  background-color: #1d0041;
+}
+.notloggedin {
+  color: red;
+}
+.wrongpwd {
+  color: yellow;
+}
+
+.every-category-container {
+  width: 90%;
+  margin: auto;
+  color: black;
+}
+.single-category-container {
+  text-align: center;
+  font-size: 19px;
+}
+.category-title {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.category-title::first-letter {
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+.error-section {
+  background-color: #1d0041;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.users-container {
+  width: 90%;
+  margin: auto;
+  color: black;
+}
+.user-name-image-container {
+  width: 33.33%;
+}
+.user-name-image-container a {
+  display: block;
+  height: 200px;
+  text-align: center;
+}
+.user-name-image-container h4 {
+}
+.user-name-image-container h4::first-letter {
+  text-transform: uppercase;
+  font-size: 150%;
+}
+.user-name-image-container img {
+  width: 70px;
+  border-radius: 50%;
+}
+/* for mobiles */
+@media (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  html * {
+    max-width: 600px;
+  }
+  .full-single-post {
+    width: 100%;
+  }
+  .single-post-container,
+  #single-post {
+    width: 100%;
+  }
+  .single-post {
+    width: 80%;
+    padding: 20px;
+  }
+  .single-post img {
+    max-width: 80%;
+  }
+
+  .post-body {
+    padding: 0px;
+    margin: 0px;
+  }
+  header {
+    position: sticky;
+  }
+
+  .header-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav {
+    margin-left: unset;
+    font-size: 0.5rem;
+  }
+
+  .form-login-logout {
+    position: fixed;
+    top: 90%;
+    right: 10px;
+  }
+  .login-container {
+    position: fixed;
+    top: 15%;
+    left: 12%;
+
+    padding: 20px;
+  }
+  .profile-forms form * {
+    max-width: 200px;
+  }
+}
